@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+    
+        .header-home{
+            background-image: -webkit-linear-gradient(145deg,#faa61f 0%,#ed1847 100%);
+            position: relative;
+            padding-top: 185px;
+            padding-bottom: 180px;
+            overflow: hidden;
+            z-index: 1;
+        }
+    
+    
+        .col-header-text{
+            color: white;
+        }
+        
+        .col-header-text h1{
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: 0.05px;
+            font-weight: 300;
+            color: white;
+        }
+        
+        .col-header-text h1 span{
+            font-weight: 600;
+        }
+    
+        .col-header-text p{
+            font-size: 16px;
+            line-height: 30px;
+            margin: 25px 0 54px;
+            text-align: justify;
+        }
+        
+        .col-header-img{
+            position: relative;
+        }
+        
+        .col-header-img img.img-header-sm{
+            margin-top: 30px;
+            margin-left: 25px;
+            right: -56px;
+            top: -73px;
+            z-index: 20;
+        }
+        
+        .banner_btn{
+            font-size: 14px;
+            line-height: 58px;
+            text-align: center !important;
+            font-family: tahoma;
+            font-weight: 700;
+            width: 700;
+            height: 60px;
+            display: inline-block;
+            text-transform: uppercase;
+            border-radius: 50px;
+            border: 2px solid transparent;
+            transition: all 0.25s linear;
+            color: #272929;
+            background: white;
+            margin-right: 10px;
+        }
+        
+        .banner_btn:hover{
+            text-decoration: none;    
+        }
+        
+        .navbar{
+            padding: 24px 0;
+            border-bottom: none !important;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .navbar ul li a{
+            color: white !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 13px;
+            transition: all 0.5s ease-in-out;
+            background: transparent !important;
+        }
+        
+        .navbar ul li a:hover, .navbar ul li a:focus{
+            color: deepskyblue !important;
+            background: none !important;
+        }
+        
+        .navbar-toggle{
+            border: 1px solid white !important;
+            color: white !important;
+            transition: all 0.5s ease-in;
+        }
+        
+        .icon-bar{
+            color: white !important;
+            background-color: white !important;
+        }
+        
+        .navbar-toggle:hover{
+            background-color: deepskyblue !important;
+        }
+        
+        .navbar-inverse .navbar-collapse{
+            background-color: transparent !important; 
+        }
+        
+        .navbar-inverse{
+            background-color: transparent !important;
+        }
+        
+        .navbar-brand{
+            color: white;
+            font-weight: bold;
+        }
+        
+        .navbar-brand:hover{
+            color: white;
+        }
+        
+        .secondary{
+            background-image: -webkit-linear-gradient(145deg,#faa61f 0%,#ed1847 100%);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        
+        
+        /**************************
+        
+        About us section styling
+        
+        ******************************/
+        
+        .section_title {} .section_subtitle{
+            margin-top: 40px;
+            margin-bottom: 7px;
+            padding-left: 7px;
+            font-size: 16px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            border-left: 3px solid #bfa67a;
+            font-size: 700;
+            font-family: tahoma;
+        }
+        
+        .section_main_title{
+            margin-top:0;
+            margin-bottom: 37px;
+            font-size: 30px;
+            line-height: 1.27;
+            font-weight: 300;
+        }
+        
+        .section_main_title strong{
+            font-weight:600;
+        }
+        
+        .about-box{
+            margin-right: 0;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            position:relative;
+            display: inline-block;
+        }
+        
+        .btn-color-background{
+            -moz-user-select:none;
+            background-image: -webkit-linear-gradient(145deg,#faa617 0%,#faa61f 0%,#ed1847 100%);
+            border: 1px solid #bfa67a;
+            border-radius: 2px;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 1.42857;
+            margin-bottom: 50px;
+            padding: 12px 48px;
+            text-align: center;
+            text-transform: center;
+            transition: all 0.5s ease 0s;
+            vertical-align:middle;
+        }
+        
+        .btn-color-background{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        
+        /***************************
+        
+        service section styling
+        
+        ***************************/
+        
+        .services-item{
+            padding: 0 8px;
+        }
+        
+        .services-item span{
+            float: left;
+            font-size: 45px;
+            color: #bfa67a;
+            line-height: 45px;   
+        }
+        
+        .services-single-item{
+            margin-left: 65px;
+        }
+        
+        .services-heading{
+            margin-bottom: 8px;
+            padding-bottom: 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .h5service-heading:after{
+            content: "";
+            width: 30px;
+            height: 2px;
+            background: #bfa67a;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #272727;
+        }
+        
+        .gaps{
+            margin-top: 50px;
+        }
+        
+        
+        /************************
+        
+        stat counting styling
+        
+       ****************************/
+        
+        
+        .stats{
+            background: #212121;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            color: white;
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+        
+        .stats i{
+            font-size: 100px;
+        }
+        
+        .stat-items h2{
+            font-weight: bolder;
+            font-size: 32px;
+            color: darkorange;
+        }
+        
+        .stats p{
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              
+              <a href="" class="navbar-brand">CREATIVE-SPACE</a>
+          </div>
+          <div class="collapse navbar-collapse" id="micon">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Our Services</a></li>
+              <li><a href="">Carrier</a></li>
+          </ul>
+          </div>
+      </div>
+  </nav>
+      
+       <section id="home" class="header-home">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-7 col-header-text lr-padding">
+                   <h1>A <span>Great</span> Creative Space for your Page</h1>
+                   <p>Creative space is a concept embracing the mental, physical, and emotional environments within which creativity operates. Creative space is a concept that is rich in possibilities and opportunities.</p>
+                   <a href="" class="banner_btn btn_white">Enroll Now</a>
+                   
+               </div>
+               <div class="col-sm-5 col-md-offset-2 col-md-3 col-header-img right-padding">
+                   
+                   <img src="design.jpg" class="img-header-sm" alt="">
+                   
+               </div>
+           </div>  
+           </div>
+       
+       </section>
+        
+       <section id="about" class="section-padding about-section">
+           
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-sm-6">
+                       <div class="section_title"><br>
+                       <div class="section_subtitle">About Us</div>
+                       <h2 class="section_main_title">WE ARE <strong>CREATIVE</strong></h2>
+                       
+                       </div>
+                       
+                       <div class="about-item">
+                           <p> 
+                           We humans were born to create. That is our purpose, our prime directive. When we are not creating, we are not acting in accordance with our prime directive, and it becomes difficult or impossible to live a fulfilling life. To be happy.Traditionally and evolutionarily speaking, men created shelter, sustenance, business and wealth, while women created babies, which is to say human life. Going back to the dawn of time, back when our ancient ancestors were first blessed with self-aware consciousness, they have imagined what they were going to create, then they created it.
+                           </p>
+                           <p>
+                            An enormous building that displays the creators’ unbelievable mastery of physics. A novel, read by millions, that shows the human condition in America during one of its toughest eras. Symphonies, composed hundreds of years ago, that still send intense chills down people’s spines. These are all masterpieces. Invaluable contributions to the human race.
+                           </p>
+                           <div class="hgt-20"></div>
+                           <div class="home-button"><br>
+                           <a href="" class="btn-color-background">Read More</a>
+                           
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-sm-4 col-sm-offset-2">
+                       <div class="about-box">
+                           <div class="box-overlay">
+                               <img src="pc.jpg" alt="">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       
+       <section id="services" class="section-padding services-section">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <div class="section_title">
+                           <div class="section_subtitle">Services</div>
+                           <h2 class="section_main_title">What We <strong>Do ?</strong></h2>
+                       </div>
+                   </div>
+               </div>
+               
+               <div class="row">
+                   <div class="col-sm-4">
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-blackboard"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">WEB DESIGN</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                   </div>
+                    <div class="col-sm-4">
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-hdd"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">GRAPHIC DESIGN</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                   </div>
+                    <div class="col-sm-4">
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-camera"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">PHOTOGRAPHY</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                   </div>
+                    <div class="col-sm-4" gaps>
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-phone-alt"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">24*7 SUPPORT</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                   </div>
+            
+                    <div class="col-sm-4" gaps>
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-level-up"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">PROGRESS AND ACCORDIANS</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                      </div>
+                     
+                    <div class="col-sm-4" gaps>
+                       <div class="services-item">
+                           <span class="glyphicon glyphicon-tree-deciduous"></span>
+                              <div class="srvices-single-item">
+                                  <h5 class="services-heading">CLEAN CODE</h5>
+                                  <p>
+                                  We are a team working hard to achieve great things – whether that be building our clients a modern website, designing and printing a new brochure or managing a clients website. Dedication, planning and thought goes into each and every thing we do.
+                                  </p>
+                                  
+                              </div> 
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       
+       <section class="stats" id="stats">
+           <div class="content-box">
+               <div class="container">
+                   <div class="row text-center">
+                       <div class="col-md-3">
+                           <div class="stat-items">
+                               <span class="glyphicon glyphicon-time"></span>
+                               <h2><span class="counter text-center">3800</span><span>+</span></h2>
+                               <p>VIEWS</p>
+                           </div> 
+                       </div>
+                   
+                   <div class="col-md-3">
+                           <div class="stat-items">
+                               <span class="glyphicon glyphicon-eye-open"></span>
+                               <h2><span class="counter text-center">3300</span><span>+</span></h2>
+                               <p>REVIEWS</p>
+                           </div> 
+                       </div>
+                   
+                    <div class="col-md-3">
+                           <div class="stat-items">
+                               <span class="glyphicon glyphicon-cd"></span>
+                               <h2><span class="counter text-center">3200</span><span>+</span></h2>
+                               <p>WORLDWIDE</p>
+                           </div> 
+                       </div>
+                          <div class="col-md-3">
+                           <div class="stat-items">
+                               <span class="glyphicon glyphicon-volume-up"></span>
+                               <h2><span class="counter text-center">3200</span><span>+</span></h2>
+                               <p>ANNOUNCE</p>
+                           </div> 
+                       </div>
+                   </div>
+               </div>
+            </div>
+       </section>
+       
+       <footer class="footer bg-white" style="border-top:1px">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <p class="copyright font-alt"><center>&copy; 2020&nbsp; <a href="index.php" style="color: darkorange">Reena Ray</a>, All Rights Reserved</center></p> 
+                   </div>
+               </div>
+           </div>
+       </footer>
+    <script>
+       
+       $(window).scroll(function(){
+        var top = $(window).scrollTop();
+           if(top>=60){
+               $("nav").addClass('secondary');
+               
+           }
+           else
+               if($("nav").hasClass('secondary')){
+                   $("nav").removeClass('secondary');
+                   
+               }
+       });
+       </script>
+   
+    
+        
+     
+</body>
+</html>
